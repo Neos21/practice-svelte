@@ -1,4 +1,9 @@
-/node_modules/
-/public/build/
-
 .DS_Store
+Thumbs.db
+
+*.log
+
+act/
+node_modules/
+
+public/build/
