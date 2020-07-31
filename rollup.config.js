@@ -59,7 +59,11 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
-		typescript({ sourceMap: !production }),
+		typescript({
+			// npm run build 時の (!) Plugin typescript: @rollup/plugin-typescript: Typescript 'sourceMap' compiler option must be set to generate source maps. ワーニングは以下のせい
+			// tsconfig.json で extends している @tsconfig/svelte/tsconfig.json の設定と反しており、いくら false に設定しても Source Map が出力されてしまう
+			sourceMap: !production
+		}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
