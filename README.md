@@ -1,5 +1,7 @@
 # Practice Svelte
 
+Practice Svelte With TypeScript And SCSS.
+
 __[Enter The Demo Site](https://neos21.github.io/practice-svelte/index.html)__
 
 

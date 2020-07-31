@@ -1,5 +1,6 @@
 {
   "name": "practice-svelte",
+  "description": "Practice Svelte With TypeScript And SCSS",
   "private": true,
   "scripts": {
     "start": "sirv public",
